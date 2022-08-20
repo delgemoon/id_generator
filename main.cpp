@@ -246,5 +246,4 @@ int main(int argc, char* argv[])
     {
         std::cout << ex.what();
     }
-    get_exchange_code(std::filesystem::path{"exchange_code.txt"});
 }
