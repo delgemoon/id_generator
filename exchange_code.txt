@@ -1,0 +1,3 @@
+FTX: 00001
+Deribit: 00002
+Binance: 00003
