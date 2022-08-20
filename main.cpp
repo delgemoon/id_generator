@@ -224,7 +224,7 @@ int main(int argc, char* argv[])
 {
     try
     {
-        if(argc != 4 )
+        if(argc != 6 )
         {
             std::cerr << "Usage: Ticker Server ";
             std::cerr << "<listen_address> <listen_port> <exchange_code file> <server_id> <datacenter id>";
