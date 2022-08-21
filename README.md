@@ -1,8 +1,12 @@
 # id_generator
 
-Very simple ID GENERATOR in C++ only depend on boost asio to generate client id for trading robots:
+A very simple ID GENERATOR in C++ only depend on boost asio to generate client id for any trading robots:
 
-exchange_code.txt: the list of exchanges which are supported
+exchange_code.txt: the exchanges which are supported
+
+### Dependencies:
+1. C++20
+2. boost-asio
 
 ## Make sure you download boost asio to your local machine, then change CMakeLists.txt accordingly.
 
@@ -23,7 +27,7 @@ exchange_code.txt: the list of exchanges which are supported
 * 0: Buy
 * 1: Sell
 2. the next 13 bytes: The timestamp in miliseconds.
-3. The next 5 bytes: The exchange id accourding to the exchange code file
+3. The next 5 bytes: The exchange id according to the exchange code file
 4. The next 3 bytes: the server id
 5. The next 2 bytes: The data center id
 6. The last 6 bytes: The incremental in a day.
@@ -31,7 +35,7 @@ exchange_code.txt: the list of exchanges which are supported
 
 ## API
 
-**/api/ftx/sell**
+**POST /api/ftx/sell**
 
 * ftx: the supported exchange
 * sell : side type( buy or sell)
