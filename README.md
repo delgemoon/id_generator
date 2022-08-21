@@ -24,7 +24,7 @@ exchange_code.txt: contains the whole exchange which support to generate client 
 * ftx: the supported exchange
 * sell : side type( buy or sell)
 
-** Return out **
+** Return **
 
 ** 404 : if the params not correct
 ** 200 : Ok if success. the body is the string with 32 byte length.
