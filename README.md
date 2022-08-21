@@ -17,6 +17,18 @@ exchange_code.txt: the list of exchanges which are supported
 * 1 : data center id.
 
 
+**The client id contains 32 byte length** :
+
+1. The first byte: The trading side: 
+* 0: Buy
+* 1: Sell
+2. the next 13 bytes: The timestamp in miliseconds.
+3. The next 5 bytes: The exchange id accourding to the exchange code file
+4. The next 3 bytes: the server id
+5. The next 2 bytes: The data center id
+6. The last 6 bytes: The incremental in a day.
+
+
 ## API
 
 **/api/ftx/sell**
