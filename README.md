@@ -1,6 +1,8 @@
 # id_generator
 
-A very simple ID GENERATOR in C++ only depend on boost asio to generate client id for any trading robots:
+A very simple ID GENERATOR in C++ only have one dependency( boost asio) to generate client id for any trading robots:
+
+Most of trading exchanges allow at minimum 32 bytes length. some might support 64 bytes. But We will cover all of them.
 
 exchange_code.txt: the exchanges which are supported
 
@@ -40,8 +42,8 @@ exchange_code.txt: the exchanges which are supported
 * ftx: the supported exchange
 * sell : side type( buy or sell)
 
-** Return **
+*Response*
 
-** 404 : if the params not correct
-** 200 : Ok if success. the body is the string with 32 byte length.
+1. *404 : if the params not correct*
+2. *200 : Ok if success. the body is the string with 32 byte length*
 
